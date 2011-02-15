@@ -1,0 +1,3 @@
+name: restBukkit
+main: com.bukkit.marciogm.restBukkit.restBukkit
+version: 0.1
