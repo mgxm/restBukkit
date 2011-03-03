@@ -1,0 +1,21 @@
+# restBukkit
+
+RESTful plugin for craftBukkit MineCraft Servers.
+This API lets you can create services to manage your server via browser
+
+## Example
+    http://YouServer.com/server/player/onlines
+    => Return all users online
+
+## TODO
+* ~~/Players/online~~
+* /player/{player}
+* /player/{player}/kick
+* /player/{player}/ban
+* /player/{player}/pardon
+* /player/{player}/teleport/{otherPlayer}
+* /server/say/{message}
+* /server/stop
+* /server/save_all
+* /server/save_on
+* /server/save_off    
