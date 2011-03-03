@@ -8,7 +8,7 @@ This API lets you can create services to manage your server via browser
     => Return all users online
 
 ## TODO
-* ~~/Players/online~~
+* <strike>/Players/online</strike>
 * /player/{player}
 * /player/{player}/kick
 * /player/{player}/ban
