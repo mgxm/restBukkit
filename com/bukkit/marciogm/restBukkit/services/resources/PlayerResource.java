@@ -2,6 +2,7 @@ package com.bukkit.marciogm.restBukkit.services.resources;
 
 import org.bukkit.Server;
 import org.bukkit.entity.Player;
+import org.json.JSONObject;
 import org.restlet.resource.*;
 
 import com.bukkit.marciogm.restBukkit.services.Globals;
@@ -20,10 +21,14 @@ public class PlayerResource extends ServerResource {
 		this.player = null; // Could be a lookup to a domain object.
 	}
 	
-	@Get
-	public String toJson() {
-		String message = getCurrentUsersOnline();
-		return message;
+	public JSONObject toJson() {
+		try{
+			JSONObject jsonobj = new JSONObject();
+			jsonobj.put("name", "marcio");
+			return jsonobj;
+		} catch (Exception e) {
+			return null;
+		}
 	}
 	
 	private String getCurrentUsersOnline() {
